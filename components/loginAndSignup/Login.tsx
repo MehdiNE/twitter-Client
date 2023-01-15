@@ -1,6 +1,7 @@
 import { Divider } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
+import ForgotPassword from "./ForgotPassword";
 
 function Login() {
   const [username, setUsername] = useState<string>("");
@@ -17,8 +18,6 @@ function Login() {
   function submitHandler() {}
 
   function loginWithGoogleHandler() {}
-
-  function forgotPasswordHandler() {}
 
   return (
     <div className="flex h-screen w-full">
@@ -43,12 +42,8 @@ function Login() {
             onChange={changePasswordHandler}
             placeholder="password"
           />
-          <button
-            onClick={forgotPasswordHandler}
-            className="text-xs text-cyan-500"
-          >
-            forgot password?
-          </button>
+
+          <ForgotPassword />
 
           <button
             onClick={submitHandler}

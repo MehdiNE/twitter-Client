@@ -13,6 +13,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@headlessui/react": "^1.7.7",
     "@mui/material": "^5.11.4",
     "@next/font": "13.0.7",
     "@reduxjs/toolkit": "^1.9.1",
